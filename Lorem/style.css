@@ -31,3 +31,236 @@ header {
   color: #fafafa;
   margin: 25px 30px;
 }
+
+.main-visual {
+  background-image: url(img/mv.png);
+  height: 650px;
+  background-size: contain;
+}
+
+.main-visual-content {
+  padding-top: 200px;
+  font-size: 64px;
+  color: #fafafa;
+  text-align: center;
+}
+
+.main-visual-content-sub {
+  padding-top: 10px;
+  font-size: 20px;
+  color: #fafafa;
+  text-align: center;
+}
+
+.text {
+  margin: auto;
+}
+
+.title {
+  margin: auto;
+}
+
+/* portfolio css */
+.port-content {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: #eceff1;
+}
+.port-port {
+  width: 920px;
+}
+.title {
+  padding-top: 90px;
+  font-size: 32px;
+  color: #000000;
+}
+.under-bar {
+  border-bottom: 3px solid #ec715f;
+  width: 70px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+.text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+  color: #000000;
+}
+.portfolio-box {
+  text-align: center;
+}
+.portfolio-img {
+  background-size: 100% 100%;
+  width: 300px;
+  height: 250px;
+  float: left;
+}
+.portfolio-img:first-child {
+  background-image: url(img/sketch.jpg);
+}
+.portfolio-img:nth-child(2) {
+  background-image: url(img/websuku.png);
+}
+.portfolio-img:nth-child(3) {
+  background-image: url(img/write.jpg);
+}
+.portfolio-img:nth-child(4) {
+  background-image: url(img/webcamp.png);
+}
+.portfolio-img:nth-child(5) {
+  background-image: url(img/talk.jpg);
+}
+.portfolio-img:last-child {
+  background-image: url(img/webcamp-mother.png);
+}
+.portfolio-img:first-child .portfolio-img:nth-child(4) {
+  margin-right: 10px;
+}
+.portfolio-img:nth-child(3) .portfolio-img:nth-child(6) {
+  margin-left: 10px;
+}
+.portfolio-img:nth-child(-n + 3) {
+  margin-top: 30px;
+}
+.portfolio-img:nth-last-child(-n + 3) {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+/* feature css */
+.feat-content {
+  width: 980px;
+}
+
+.feat-feat {
+  width: 980px;
+  text-align: center;
+}
+.feature {
+  width: 980px;
+  display: flex;
+  margin-top: 30px;
+}
+.feature-content {
+  width: 320px;
+  display: inline-block;
+  padding-bottom: 90px;
+  text-align: center;
+}
+.fab {
+  font-size: 60px;
+}
+.feature-title {
+  font-size: 20px;
+  color: #000000;
+  margin: 10px auto 10px auto;
+}
+.feature-content:nth-child(2) {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* profile css */
+.pro-content {
+  width: 100%;
+  background-color: #eceff1;
+}
+
+.pro-pro {
+  width: 1024px;
+  text-align: center;
+}
+
+.profile-content {
+  padding-top: 30px;
+  padding-bottom: 90px;
+  text-align: center;
+  display: flex;
+}
+
+.profile-image-box {
+  width: 512px;
+}
+
+.profile-image {
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.profile-text {
+  width: 512px;
+  display: inline-block;
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 20px;
+}
+
+.profile-skills {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.name-skills {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* contact css */
+.cont-content {
+  width: 100%;
+  padding-bottom: 90px;
+  text-align: center;
+}
+.contact-content {
+  width: 800px;
+  padding-top: 30px;
+  margin: auto;
+  display: flex;
+}
+
+.contact-info {
+  width: 400px;
+  text-align: center;
+}
+.contact-means {
+  font-size: 20px;
+}
+.mail-tel {
+  margin-top: 5px;
+}
+
+.sns-info {
+  width: 400px;
+  text-align: center;
+}
+
+.contact-sns {
+  font-size: 20px;
+  text-align: center;
+}
+
+.fab2 {
+  font-size: 50px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+/* footer css */
+footer {
+  background-color: #ec715f;
+  height: 60px;
+  width: 100%;
+}
+
+.footer-text {
+  color: #fafafa;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
