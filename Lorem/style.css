@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 header {
   width: 100%;
   height: 70px;
@@ -63,15 +69,15 @@ header {
 /* portfolio css */
 .port-content {
   width: 100%;
-  margin: auto;
-  text-align: center;
   background-color: #eceff1;
 }
 .port-port {
   width: 920px;
+  margin: 0 auto;
 }
 .title {
   padding-top: 90px;
+  text-align: center;
   font-size: 32px;
   color: #000000;
 }
@@ -88,7 +94,8 @@ header {
   color: #000000;
 }
 .portfolio-box {
-  text-align: center;
+  margin: 0 auto;
+  width: 920px;
 }
 .portfolio-img {
   background-size: 100% 100%;
@@ -114,10 +121,17 @@ header {
 .portfolio-img:last-child {
   background-image: url(img/webcamp-mother.png);
 }
-.portfolio-img:first-child .portfolio-img:nth-child(4) {
+.portfolio-img:first-child {
   margin-right: 10px;
 }
-.portfolio-img:nth-child(3) .portfolio-img:nth-child(6) {
+.portfolio-img:nth-child(4) {
+  margin-right: 10px;
+}
+
+.portfolio-img:nth-child(3) {
+  margin-left: 10px;
+}
+.portfolio-img:nth-child(6) {
   margin-left: 10px;
 }
 .portfolio-img:nth-child(-n + 3) {
@@ -130,12 +144,12 @@ header {
 
 /* feature css */
 .feat-content {
-  width: 980px;
+  width: 100%;
 }
 
 .feat-feat {
   width: 980px;
-  text-align: center;
+  margin: 0 auto;
 }
 .feature {
   width: 980px;
@@ -169,7 +183,7 @@ header {
 
 .pro-pro {
   width: 1024px;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .profile-content {
@@ -215,7 +229,7 @@ header {
 .cont-content {
   width: 100%;
   padding-bottom: 90px;
-  text-align: center;
+  margin: 0 auto;
 }
 .contact-content {
   width: 800px;
