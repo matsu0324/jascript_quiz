@@ -29,6 +29,7 @@ header {
 
 .nav-list {
   margin-left: auto;
+  display: block !important;
 }
 
 .nav-list-item {
@@ -36,6 +37,10 @@ header {
   font-size: 16px;
   color: #fafafa;
   margin: 25px 30px;
+}
+
+#hamburger {
+  display: none !important;
 }
 
 .main-visual {
@@ -56,14 +61,6 @@ header {
   font-size: 20px;
   color: #fafafa;
   text-align: center;
-}
-
-.text {
-  margin: auto;
-}
-
-.title {
-  margin: auto;
 }
 
 /* portfolio css */
@@ -277,4 +274,190 @@ footer {
   font-size: 16px;
   padding: 20px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-logo {
+    height: 50px;
+  }
+  .nav-list {
+    display: none !important;
+  }
+  #hamburger {
+    display: block !important;
+    position: absolute;
+    border: 2px solid;
+    color: #ffffff;
+    margin: 5px auto;
+    right: 10%;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .inner_line {
+    display: block;
+    position: absolute;
+    margin-left: 3px;
+    width: 40px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: 1s;
+    border-radius: 4px;
+  }
+
+  #line1 {
+    top: 5px;
+  }
+  #line2 {
+    top: 16px;
+  }
+  #line3 {
+    bottom: 7px;
+  }
+
+  .main-visual {
+    height: 650px;
+    background-image: url(img/code.png);
+    background-size: cover;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .main-visual-content {
+    padding-top: 200px;
+    font-size: 40px;
+    color: #fafafa;
+  }
+  .main-visual-content-sub {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fafafa;
+  }
+
+  .title {
+    padding-top: 90px;
+    font-size: 32px;
+    color: #000000;
+  }
+  .text {
+    font-size: 16px;
+    color: #000000;
+    margin: 30px auto;
+  }
+
+  /* portfolio */
+  .port-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .port-port {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .portfolio-box {
+    display: block;
+  }
+
+  .portfolio-img {
+    float: none;
+  }
+
+  .portfolio-img:first-child {
+    display: none;
+  }
+
+  .portfolio-img:nth-child(2) {
+    display: block;
+  }
+
+  .portfolio-img:nth-child(3) {
+    display: none;
+  }
+
+  .portfolio-img:nth-child(4) {
+    display: block;
+  }
+
+  .portfolio-img:nth-child(5) {
+    display: none;
+  }
+
+  .portfolio-img:last-child {
+    display: block;
+  }
+
+  /* feature */
+  .feature {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .feat-feat {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* .feature-content {
+    padding-top: 10px;
+  } */
+
+  /* profile */
+  .pro-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .pro-pro {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .profile-content {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    display: block;
+  }
+
+  .profile-image-box {
+    text-align: center;
+  }
+  .profile-text {
+    text-align: center;
+  }
+
+  /* contact */
+  .con-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact-content {
+    padding-top: 10px;
+    margin: 0 auto;
+    display: block;
+  }
+  .contact-means {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 20px;
+  }
+
+  .contact-sns {
+    margin-top: 20px;
+  }
+
+  footer {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
